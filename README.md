@@ -17,7 +17,9 @@ Performance: 89 <br /> Accessibility: 100 <br /> Best Practices: 100 <br /> SEO:
 
 ## Github Approach:
 
-dev branch is created from Master branch. Seperate branches are created from dev branch for specific features. 
+`dev` branch is created from `master` branch. <br />
+Branch `master` is on Continous Deployment. <br />
+Seperate branches are created from dev branch for specific features. 
 
 ## About Project:
 
