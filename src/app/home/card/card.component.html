@@ -1,0 +1,22 @@
+<section class="row">
+  <div class="col-3 card-wrap" *ngFor="let data of Data">
+    <div class="card">
+      <!-- <figure> -->
+      <img class="card-img-top" src={{data.links.mission_patch}} alt="IMAGE cannot be displayed at the moment">
+      <!-- <figcaption></figcaption> -->
+      <!-- </figure> -->
+      <div class="card-body">
+        <h6 class="card-title">{{data.mission_name}}</h6>
+        <p class="card-text">
+          Mission Ids: {{data.mission_id}}
+          <br />
+          Launch year: {{data.launch_year}}
+          <br />
+          Successful Launch: {{data.launch_success}}
+          <br />
+          Successful Landing: {{data.rocket.first_stage.cores[0].land_success}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

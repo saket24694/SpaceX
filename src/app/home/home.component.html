@@ -1,0 +1,65 @@
+<div>
+    <header>
+        <h4 class="page-title">SpaceX Launch Programs</h4>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-2 sidebar-wrap">
+                <aside>
+                    <div class="row ">
+                        <div class="col-12 sidebar text-center">
+                            <h5>Filters</h5>
+                            <section>
+                                <h6>Launch Year</h6>
+                                <div class="row">
+                                    <div class="col-6" *ngFor="let year of launchYears">
+                                        <button (click)="filter(year, launchSuccess, landSuccess)">
+                                            {{year}}
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <h6>Successful Launch</h6>
+                                <div class="row">
+                                    <div class="col-6" *ngFor="let launchSuccess of success">
+                                        <button (click)="filter(year, launchSuccess, landSuccess)">
+                                            {{launchSuccess}}
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <h6>Successful Landing</h6>
+                                <div class="row">
+                                    <div class="col-6" *ngFor="let landSuccess of success">
+                                        <button (click)="filter(year, launchSuccess, landSuccess)">
+                                            {{landSuccess}}
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Render Card Component -->
+            <div class="col-10 content">
+                <section>
+                    <app-card></app-card> 
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <div class="footer">
+            <b>Developed by: Saket</b>
+        </div>
+        <div class="footer-mobile">
+            <b>Developed by:</b>
+            <br />
+            <b>Saket</b>
+        </div>
+    </footer>
+</div>
