@@ -38,19 +38,19 @@ expect(launchYears).toContain('2010');
 describe ("Url Suite", () => {
   it('Launch year Url change', () => {  
   const url = filter("2020", null, null);
-  expect(url).toBe('http://localhost:4200/?&launch_year=2020');  
+  expect(url).toBe('http://localhost:4200/home?limit=100&launch_year=2006');  
   //expect(true).toBe(true);
   });
   
   it('Launch success Url change', () => {  
     const url = filter(null, true, null);
-    expect(url).toBe('http://localhost:4200/?&launch_success=true');  
+    expect(url).toBe('http://localhost:4200/home?limit=100&launch_success=true');  
     //expect(true).toBe(true);
     });
   
     it('Land year Url change', () => {  
       const url = filter(null, null, true);
-      expect(url).toBe('http://localhost:4200/?&launch_year=2020');  
+      expect(url).toBe('http://localhost:4200/home?limit=100&land_success=true');  
       //expect(true).toBe(true);
       });
   })
