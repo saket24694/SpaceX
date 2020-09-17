@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {environment} from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,14 +10,14 @@ import {environment} from 'src/environments/environment';
 export class HomeService {
   baseUrl = environment.baseUrl;
   url;
-  
-  constructor(private http: HttpClient) {}
+
+  constructor(private http: HttpClient) { }
 
   getData = async (yearFilter, launch_success, land_success) => {
     this.url = this.baseUrl;
     if (yearFilter) {
       this.url = this.url + `&launch_year=${yearFilter}`;
-   }
+    }
 
     if (launch_success) {
       this.url = this.url + `&launch_success=${launch_success}`;
@@ -31,5 +31,10 @@ export class HomeService {
   getApiData() {
     const url = this.url || this.baseUrl;
     return this.http.get(url);
+
+  }
+  
+  getUpdatedUrl() {
+    return this.url;
   }
 }

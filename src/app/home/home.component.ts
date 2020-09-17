@@ -16,7 +16,7 @@ export class HomeComponent implements AfterViewInit {
   public year: string;
   public launchSuccess: string;
   public landSuccess: string;
-  
+
   launchYears = [
     "2006",
     "2007",
@@ -42,7 +42,7 @@ export class HomeComponent implements AfterViewInit {
     private location: Location
   ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   ngAfterViewInit() {
     //setTimeout(() => this.getApiData = () => this.cardComponent.getApiData, 1000);
@@ -61,6 +61,10 @@ export class HomeComponent implements AfterViewInit {
     }
     this.homeService.getData(this.year, this.launchSuccess, this.landSuccess);
     this.cardComponent.getApiData();
+    const url = this.homeService.getUpdatedUrl();
+    const queryParam = url.split('?')[1];
+    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + queryParam;
+    window.history.pushState({ path: newurl }, '', newurl);
   }
 }
 
