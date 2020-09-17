@@ -42,7 +42,8 @@ As mentioned in the requirement.
 
 ## Functionality:
 
-Filter - On the basis of Launch year, Successful Launch and Successful Landing.
+Filter - On the basis of Launch year, Successful Launch and Successful Landing.<br />
+Url - Url gets updated as per selection of Filters.
 
 ## Installation
 
