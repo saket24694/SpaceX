@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Heroku Deployment:
 
-
+Link: https://spacex-prog.herokuapp.com 
 
 ## LightHouse Score:
 
