@@ -36,9 +36,10 @@ $color2:#525E9F;
 
 @media only screen and (min-width: 224px) and (max-width: 244px) {
    .card {
-      padding:20px !important;
+      padding:22px !important;
       margin-bottom: 18px !important;
    }
+   
    .card-title {
       font-size:18px !important;
    }
@@ -59,22 +60,22 @@ $color2:#525E9F;
    }
 
    .card-text {
-      font-size:13px !important;
+      font-size:14px !important;
    }
 }
 
 @media only screen and (min-width: 274px) and (max-width: 340px) {
    .card {
-      padding:30px !important;
+      padding:35px !important;
       margin-bottom: 25px !important;
    } 
 
    .card-title {
-      font-size:25px !important;
+      font-size:27px !important;
    }
 
    .card-text {
-      font-size:15px !important;
+      font-size:17px !important;
    }
 }
 
@@ -89,7 +90,7 @@ $color2:#525E9F;
    }
 
    .card-text {
-      font-size:20px !important;
+      font-size:22px !important;
    }
 }
 
@@ -100,29 +101,36 @@ $color2:#525E9F;
    } 
 
    .card-title {
-      font-size:37px !important;
+      font-size:35px !important;
+      padding-top:5px;
    }
 
    .card-text {
-      font-size:27px !important;
+      font-size:25px !important;
    }
 }
 
 @media only screen and (min-width: 474px) and (max-width: 560px) {
    .card {
-      padding:50px !important;
+      padding:53px !important;
       margin-bottom: 30px !important;
    }
 
    .card-title {
       font-size:40px !important;
+      padding-top:15px;
    }
 
    .card-text {
-      font-size:30px !important;
+      font-size:31px !important;
    }
 }
-  
+
+@media only screen and (min-width: 561px) and (max-width: 700px) {
+   .card-title {
+      padding-top:20px;
+   }
+}
 @media only screen and (max-width: 700px) {
    .card-wrap {
       max-width: 100% !important;
@@ -131,17 +139,17 @@ $color2:#525E9F;
    }
 
    .card {
-      padding:60px;
+      padding:65px;
       border-radius:25px;
       margin-bottom: 50px;
    } 
 
    .card-title {
-      font-size:50px ;
+      font-size:45px ;
    }
 
    .card-text {
-      font-size:40px;
+      font-size:35px;
    }
 }
   

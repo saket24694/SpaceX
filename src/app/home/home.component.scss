@@ -68,7 +68,7 @@ button:active {
 
 @media only screen and (min-width: 224px) and (max-width: 244px) {
   .page-title {
-    font-size:35px !important;
+    font-size:30px !important;
   }
 
   h5 {
@@ -82,7 +82,7 @@ button:active {
   }
 
   button {
-    font-size:18px !important;
+    font-size:17px !important;
     margin-top: 15px !important;
     margin-bottom: 4px !important;
   }
@@ -94,7 +94,7 @@ button:active {
 
 @media only screen and (min-width: 244px) and (max-width: 274px) {
   .page-title {
-    font-size:38px !important;
+    font-size:35px !important;
   }
 
   .footer-mobile {
@@ -102,25 +102,25 @@ button:active {
   }
 
   button {
-    font-size:20px !important;
-    margin-top: 20px !important;
+    font-size:18px !important;
+    margin-top: 15px !important;
     margin-bottom: 5px !important;
   }
 
   h6 {
-    font-size: 18px !important;
+    font-size: 19px !important;
     padding-top: 15px !important;
     padding-bottom: 2px !important;  
   }
 
   h5 {
-    font-size: 30px !important;
+    font-size: 28px !important;
   }
 }
 
 @media only screen and (min-width: 274px) and (max-width: 340px) {
   .page-title {
-    font-size:40px !important;
+    font-size:38px !important;
   }
 
   .footer-mobile {
@@ -128,14 +128,15 @@ button:active {
   }
 
   button {
-    font-size:28px !important;
+    font-size:21px !important;
+    margin-top: 15px !important;
   }
 
   h6 {
     font-size: 22px !important; 
   }
   h5 {
-    font-size: 38px !important;
+    font-size: 33px !important;
   }
 }
 
@@ -145,15 +146,17 @@ button:active {
   }
 
   button {
-    font-size:28px !important;
+    font-size:23px !important;
+    margin-top: 18px !important;
   }
 
   h6 {
-    font-size: 22px !important; 
+    font-size: 24px !important;
+    padding-top:10px !important; 
   }
   
   h5 { 
-    font-size: 40px !important;
+    font-size: 38px !important;
   }
 }
 
@@ -163,28 +166,42 @@ button:active {
   }
 
   button {
-    font-size:28px !important;
+    font-size:23px !important;
+    margin-top: 21px !important;
   }
 
   h6 {
     font-size: 28px !important;
+    padding-top:15px !important;
   }
 }
 
 @media only screen and (min-width: 474px) and (max-width: 560px) {
   .footer-mobile {
-    font-size:45px !important;
+    font-size: 45px !important;
   }
 
   button {
-    font-size:35px !important;
+    font-size: 25px !important;
+    width: 80% !important;
+    margin-top: 23px !important;
   }
 
   h6 {
-    font-size: 35px !important;  
+    font-size: 35px !important;
+    padding-top:20px !important;  
   }
 }
 
+@media only screen and (min-width: 561px) and (max-width: 700px) {
+  button {
+    width:73% !important;
+  }
+
+  h6 {
+    padding-top:20px !important;
+  }
+}
 @media only screen and (max-width: 700px) {
   .sidebar-wrap {
     max-width:100% !important;
@@ -209,6 +226,7 @@ button:active {
   .page-title {
     font-size:45px ;
   }
+  
   h5 {
     font-size: 45px;
   }
@@ -219,7 +237,7 @@ button:active {
 
   button {
     width:90%;
-    font-size: 40px;
+    font-size: 27px;
     margin-top: 25px;
     margin-bottom: 10px;
     border-radius: 9px;
